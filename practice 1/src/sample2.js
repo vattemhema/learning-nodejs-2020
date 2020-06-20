@@ -2,12 +2,12 @@
 
 // using http //
 
-const http = require ("http");
+const http = require("http");
 
-http.createServer(function(request, response){
-    response.writehead(200,{'content type': 'text/plain'});
+http.createServer(function (request, response) {
+    response.writeHead(200, { 'Content-Type': 'text/plain' });
 
-    response.end('My First Web Server')
+    response.end('This is the http program');
 }).listen(8081);
 
-console.log('server running at http : //localhost:8081');
+console.log('server running at http://localhost:8081');
